@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>HH Goa 2026 · Builder ID &amp; Frame Generator</title>
+<meta name="description" content="Turn any photo into your Hacker House Goa 2026 Builder ID. No account, nothing uploaded, rendered on your device. #FrameInGoa" />
+<meta name="theme-color" content="#0b1f1c" />
+
+<!-- Fonts: Fraunces (display/serif — the warm, human side), Space Grotesk + JetBrains Mono (the terminal/hacker side), Noto Sans Devanagari (गोवा) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Devanagari:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css?v=247" />
+</head>
+<body>
+
+<!-- Ambient background mesh blobs -->
+<div class="blob blob-1" aria-hidden="true"></div>
+<div class="blob blob-2" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top">
+      <div class="brand-logo-stacked">
+        <span class="brand-top">2:47PM</span>
+        <span class="brand-bottom">STUDIO</span>
+      </div>
+    </a>
+    <nav class="nav__links">
+      <a href="#top">CHECK HYPE</a>
+    </nav>
+    <a class="nav__apply" href="https://hacker-house-goa-2026.devfolio.co/" target="_blank" rel="noopener">APPLY</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__boot" aria-hidden="true">
+      <span id="bootLine">&gt;&gt; connecting to HACKER_HOUSE_GOA_2026 …</span><span class="cursor">_</span>
+    </div>
+
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">GOA, INDIA · 28–31 OCT 2026 · 247 SEATS</p>
+        <div class="hero__brand-banner">
+          <h1 class="hero__title hero__title-official">
+            HACKER <span class="goa-sticker-wrap"><span class="goa-sticker">गोवा</span></span> HOUSE
+          </h1>
+          <p class="hero__brand-sub">
+            <span>GOA, INDIA &middot; 28 &ndash; 31 OCT 2026</span>
+            <span>2:47 PM STUDIO</span>
+          </p>
+        </div>
+        <p class="hero__sub">
+          Upload a photo or take a selfie and get a Builder ID, a profile frame, or a
+          team pass for your whole crew — with your name, stack and an auto‑assigned
+          builder class stamped on. Everything renders in your browser; nothing is
+          uploaded anywhere.
+        </p>
+        <div class="hero__actions">
+          <a href="#studio" class="btn btn--primary">Start building <span aria-hidden="true">↓</span></a>
+          <a href="https://hacker-house-goa-2026.devfolio.co/" target="_blank" rel="noopener" class="btn btn--ghost">Apply on Devfolio</a>
+        </div>
+        <p class="hero__note">No login. No email stored anywhere but your own device. Just #FrameInGoa.</p>
+      </div>
+
+      <div class="hero__preview" aria-hidden="true">
+        <div class="preview-card" id="heroPreviewCard">
+          <div class="preview-card__perf"></div>
+          <div class="preview-card__body">
+            <div class="preview-card__top">
+              <span class="mono">RESIDENT PASS</span>
+              <span class="mono">№ 0247</span>
+            </div>
+            <div class="preview-card__photo"></div>
+            <div class="preview-card__name">YOUR NAME</div>
+            <div class="preview-card__stack mono">FULL-STACK · BUILDER CLASS</div>
+            <div class="preview-card__bars"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ BEACH STATS ILLUSTRATION ============ -->
+    <div class="hero__beach-stats" aria-label="Hacker House Goa Beach and Stats Signpost">
+      <div class="beach-sun"></div>
+      <div class="beach-sea">
+        <div class="sea-wave"></div>
+      </div>
+      <div class="beach-sand">
+        <!-- Striped Beach Umbrella -->
+        <div class="beach-umbrella">
+          <div class="umbrella-canopy"></div>
+          <div class="umbrella-pole"></div>
+        </div>
+        
+        <!-- Lounger Chairs -->
+        <div class="beach-chair chair-1"></div>
+        <div class="beach-chair chair-2"></div>
+        
+        <!-- Central Stats Signpost -->
+        <div class="beach-signpost">
+          <div class="signpost-pole"></div>
+          <div class="signpost-arrow arrow-1 yellow-arrow">
+            <span class="val">6800+</span>
+            <span class="lbl">Registrations</span>
+          </div>
+          <div class="signpost-arrow arrow-2 pink-arrow">
+            <span class="val">390+</span>
+            <span class="lbl">Hackers</span>
+          </div>
+          <div class="signpost-arrow arrow-3 yellow-arrow">
+            <span class="val">100</span>
+            <span class="lbl">Projects</span>
+          </div>
+          <div class="signpost-arrow arrow-4 pink-arrow">
+            <span class="val">$50K</span>
+            <span class="lbl">Bounties</span>
+          </div>
+        </div>
+
+        <!-- Retro Scooter -->
+        <div class="beach-scooter">
+          <div class="scooter-body"></div>
+          <div class="scooter-seat"></div>
+          <div class="scooter-wheel wheel-1"></div>
+          <div class="scooter-wheel wheel-2"></div>
+        </div>
+
+        <!-- Decorative Palm Trees -->
+        <div class="beach-palm palm-left"></div>
+        <div class="beach-palm palm-right"></div>
+
+        <!-- Bottom ornamental divider -->
+        <div class="beach-stats__ornament"></div>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>GOA, INDIA</span><span>·</span><span>28–31 OCT 2026</span><span>·</span><span>247 SEATS</span><span>·</span><span>#FrameInGoa</span><span>·</span><span>LESS NOISE. MORE SIGNAL.</span><span>·</span>
+        <span>GOA, INDIA</span><span>·</span><span>28–31 OCT 2026</span><span>·</span><span>247 SEATS</span><span>·</span><span>#FrameInGoa</span><span>·</span><span>LESS NOISE. MORE SIGNAL.</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BEACH LANDSCAPE DIVIDER ============ -->
+  <section class="beach-divider" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 480" class="beach-divider__svg">
+      <!-- Background / Sky -->
+      <rect width="1600" height="480" fill="#0B6E45"/>
+      
+      <!-- Sunset Sun & Rays -->
+      <circle cx="800" cy="270" r="120" fill="#FFDC00" stroke="#000000" stroke-width="4.5"/>
+      <!-- Rays -->
+      <line x1="800" y1="130" x2="800" y2="40" stroke="#FFDC00" stroke-width="3" stroke-dasharray="8 8"/>
+      <line x1="910" y1="170" x2="980" y2="100" stroke="#FFDC00" stroke-width="3" stroke-dasharray="8 8"/>
+      <line x1="930" y1="270" x2="1030" y2="270" stroke="#FFDC00" stroke-width="3" stroke-dasharray="8 8"/>
+      <line x1="910" y1="370" x2="985" y2="440" stroke="#FFDC00" stroke-width="3" stroke-dasharray="8 8"/>
+      <line x1="800" y1="410" x2="800" y2="460" stroke="#FFDC00" stroke-width="3"/>
+      <line x1="690" y1="370" x2="615" y2="440" stroke="#FFDC00" stroke-width="3" stroke-dasharray="8 8"/>
+      <line x1="670" y1="270" x2="570" y2="270" stroke="#FFDC00" stroke-width="3" stroke-dasharray="8 8"/>
+      <line x1="690" y1="170" x2="620" y2="100" stroke="#FFDC00" stroke-width="3" stroke-dasharray="8 8"/>
+
+      <!-- Mountains / Islands -->
+      <path d="M 200 330 Q 350 260 500 330 L 500 480 L 200 480 Z" fill="#074524" stroke="#000000" stroke-width="4"/>
+      <path d="M 1100 330 Q 1250 250 1400 330 L 1400 480 L 1100 480 Z" fill="#074524" stroke="#000000" stroke-width="4"/>
+
+      <!-- Sea / Water -->
+      <rect x="0" y="320" width="1600" height="70" fill="#095C39" stroke="#000000" stroke-width="4"/>
+      <!-- Sea wave lines -->
+      <path d="M 50 350 Q 80 345 110 350 T 170 350 T 230 350" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+      <path d="M 650 340 Q 680 335 710 340 T 770 340 T 830 340" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+      <path d="M 1350 355 Q 1380 350 1410 355 T 1470 355 T 1530 355" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+
+      <!-- Sailboats -->
+      <g transform="translate(350, 310)">
+        <polygon points="0,0 8,-15 15,0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+        <rect x="-4" y="0" width="22" height="4" rx="2" fill="#FF007F" stroke="#000000" stroke-width="2"/>
+      </g>
+      <g transform="translate(1300, 315) scale(0.8)">
+        <polygon points="0,0 8,-15 15,0" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+        <rect x="-4" y="0" width="22" height="4" rx="2" fill="#FFDC00" stroke="#000000" stroke-width="2"/>
+      </g>
+
+      <!-- Sand Beach -->
+      <path d="M 0 380 Q 400 360 800 385 T 1600 370 L 1600 480 L 0 480 Z" fill="#ffffff" stroke="#000000" stroke-width="4.5"/>
+
+      <!-- GOA BEACH Shack -->
+      <g transform="translate(980, 240)">
+        <!-- Shack building structure -->
+        <rect x="20" y="50" width="180" height="90" fill="#ffffff" stroke="#000000" stroke-width="4" rx="4"/>
+        <polygon points="0,50 110,0 220,50" fill="#074524" stroke="#000000" stroke-width="4"/>
+        <!-- Sign board -->
+        <rect x="40" y="15" width="140" height="30" fill="#FF007F" stroke="#000000" stroke-width="3" rx="3"/>
+        <text x="110" y="36" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="16" text-anchor="middle">GOA BEACH</text>
+        <!-- Counter Opening -->
+        <rect x="40" y="70" width="100" height="45" fill="#000000" rx="3"/>
+        <circle cx="90" cy="92" r="8" fill="#ffffff"/> <!-- Bartender -->
+        <rect x="86" y="100" width="8" height="15" fill="#ffffff"/>
+        <rect x="35" y="105" width="110" height="6" fill="#FF007F" stroke="#000000" stroke-width="2"/>
+        <!-- Bar Stools -->
+        <g stroke="#000000" stroke-width="2" fill="#ffffff">
+          <line x1="50" y1="110" x2="50" y2="135"/>
+          <ellipse cx="50" cy="110" rx="6" ry="2"/>
+          <line x1="90" y1="110" x2="90" y2="135"/>
+          <ellipse cx="90" cy="110" rx="6" ry="2"/>
+          <line x1="130" y1="110" x2="130" y2="135"/>
+          <ellipse cx="130" cy="110" rx="6" ry="2"/>
+        </g>
+        <!-- Surfboard next to shack -->
+        <path d="M 210,65 Q 218,85 210,140 L 200,140 Q 192,85 200,65 Z" fill="#FFDC00" stroke="#000000" stroke-width="3"/>
+        <path d="M 205,65 L 205,140" stroke="#FF007F" stroke-width="1.5"/>
+      </g>
+
+      <!-- Beach Loungers and Umbrellas -->
+      <!-- Left Umbrella & Chair -->
+      <g transform="translate(250, 270)">
+        <line x1="50" y1="40" x2="50" y2="130" stroke="#000000" stroke-width="4"/>
+        <path d="M 10,40 Q 50,-10 90,40 Z" fill="#FFDC00" stroke="#000000" stroke-width="4"/>
+        <path d="M 30,40 Q 50,15 70,40" fill="none" stroke="#000000" stroke-2="2"/>
+        <!-- Lounger Chair -->
+        <polygon points="65,115 105,115 115,130 55,130" fill="#095C39" stroke="#000000" stroke-width="3"/>
+        <line x1="75" y1="130" x2="70" y2="115" stroke="#000000" stroke-width="3"/>
+        <line x1="95" y1="130" x2="90" y2="115" stroke="#000000" stroke-width="3"/>
+      </g>
+      <!-- Center Umbrella & Chair -->
+      <g transform="translate(480, 290) scale(0.9)">
+        <line x1="50" y1="40" x2="50" y2="130" stroke="#000000" stroke-width="4"/>
+        <path d="M 10,40 Q 50,-10 90,40 Z" fill="#FF007F" stroke="#000000" stroke-width="4"/>
+        <path d="M 30,40 Q 50,15 70,40" fill="none" stroke="#000000" stroke-2="2"/>
+        <!-- Lounger Chair -->
+        <polygon points="65,115 105,115 115,130 55,130" fill="#074524" stroke="#000000" stroke-width="3"/>
+      </g>
+
+      <!-- People Walking -->
+      <!-- Left Person -->
+      <g transform="translate(170, 360) scale(0.8)">
+        <circle cx="10" cy="15" r="5" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+        <line x1="10" y1="20" x2="10" y2="35" stroke="#000000" stroke-width="2.5"/>
+        <line x1="10" y1="35" x2="5" y2="48" stroke="#000000" stroke-width="2.5"/>
+        <line x1="10" y1="35" x2="15" y2="48" stroke="#000000" stroke-width="2.5"/>
+        <line x1="10" y1="25" x2="2" y2="33" stroke="#000000" stroke-width="2"/>
+        <line x1="10" y1="25" x2="18" y2="33" stroke="#000000" stroke-width="2"/>
+      </g>
+      <!-- Right Person -->
+      <g transform="translate(1360, 355) scale(0.8)">
+        <circle cx="10" cy="15" r="5" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+        <line x1="10" y1="20" x2="10" y2="35" stroke="#000000" stroke-width="2.5"/>
+        <line x1="10" y1="35" x2="7" y2="48" stroke="#000000" stroke-width="2.5"/>
+        <line x1="10" y1="35" x2="13" y2="48" stroke="#000000" stroke-width="2.5"/>
+        <line x1="10" y1="25" x2="4" y2="33" stroke="#000000" stroke-width="2"/>
+        <line x1="10" y1="25" x2="16" y2="33" stroke="#000000" stroke-width="2"/>
+      </g>
+
+      <!-- Palm Trees -->
+      <!-- Left side palm trees -->
+      <g transform="translate(10, 480) scale(1.65)">
+        <!-- Trunk -->
+        <path d="M 40 0 Q 30 -110 10 -190 L 20 -192 Q 40 -110 50 0 Z" fill="white" stroke="black" stroke-width="3"/>
+        <path d="M 37 -40 L 47 -38 M 34 -80 L 44 -78 M 30 -120 L 39 -118 M 25 -160 L 33 -158" stroke="black" stroke-width="2"/>
+        <!-- Leaves -->
+        <g fill="#00A859" stroke="black" stroke-width="2">
+          <path d="M 15 -190 Q -25 -210 -45 -190 Q -25 -170 15 -190 Z"/>
+          <path d="M 15 -190 Q -10 -240 -25 -265 Q -40 -235 15 -190 Z"/>
+          <path d="M 15 -190 Q 20 -250 45 -260 Q 30 -225 15 -190 Z"/>
+          <path d="M 15 -190 Q 50 -210 70 -190 Q 40 -170 15 -190 Z"/>
+          <path d="M 15 -190 Q 15 -160 -10 -145 Q 0 -175 15 -190 Z"/>
+        </g>
+      </g>
+      
+      <!-- Right side palm trees -->
+      <g transform="translate(1590, 480) scale(1.65) scale(-1, 1)">
+        <!-- Trunk -->
+        <path d="M 40 0 Q 30 -110 10 -190 L 20 -192 Q 40 -110 50 0 Z" fill="white" stroke="black" stroke-width="3"/>
+        <path d="M 37 -40 L 47 -38 M 34 -80 L 44 -78 M 30 -120 L 39 -118 M 25 -160 L 33 -158" stroke="black" stroke-width="2"/>
+        <!-- Leaves -->
+        <g fill="#00A859" stroke="black" stroke-width="2">
+          <path d="M 15 -190 Q -25 -210 -45 -190 Q -25 -170 15 -190 Z"/>
+          <path d="M 15 -190 Q -10 -240 -25 -265 Q -40 -235 15 -190 Z"/>
+          <path d="M 15 -190 Q 20 -250 45 -260 Q 30 -225 15 -190 Z"/>
+          <path d="M 15 -190 Q 50 -210 70 -190 Q 40 -170 15 -190 Z"/>
+          <path d="M 15 -190 Q 15 -160 -10 -145 Q 0 -175 15 -190 Z"/>
+        </g>
+      </g>
+
+      <!-- Beach houses / cabins at the bottom left/right -->
+      <!-- Bottom Left Cabins -->
+      <g transform="translate(100, 410)">
+        <polygon points="0,70 60,30 120,70" fill="#095C39" stroke="#000000" stroke-width="3"/>
+        <rect x="15" y="70" width="90" height="70" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <rect x="45" y="90" width="30" height="50" fill="#074524" stroke="#000000" stroke-width="2"/>
+      </g>
+      <g transform="translate(230, 420) scale(0.85)">
+        <polygon points="0,70 60,30 120,70" fill="#FF007F" stroke="#000000" stroke-width="3"/>
+        <rect x="15" y="70" width="90" height="70" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <rect x="45" y="90" width="30" height="50" fill="#FFDC00" stroke="#000000" stroke-width="2"/>
+      </g>
+      <!-- Bottom Right Cabins -->
+      <g transform="translate(1280, 415) scale(0.9)">
+        <polygon points="0,70 60,30 120,70" fill="#FFDC00" stroke="#000000" stroke-width="3"/>
+        <rect x="15" y="70" width="90" height="70" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+        <rect x="45" y="90" width="30" height="50" fill="#FF007F" stroke="#000000" stroke-width="2"/>
+      </g>
+    </svg>
+  </section>
+
+  <!-- ============ STUDIO ============ -->
+  <section class="studio" id="studio">
+    <div class="section-head">
+      <p class="eyebrow">The studio</p>
+      <h2>Configure, preview, mint.</h2>
+      <p class="section-sub">Fields marked <span class="req">*</span> are required. Email and phone are checked as you type — you'll always know exactly why one is rejected.</p>
+    </div>
+
+    <div class="studio__grid">
+
+      <!-- ---- LEFT: FORM ---- -->
+      <form class="panel form" id="idForm" novalidate>
+
+        <!-- format tabs -->
+        <div class="field-group">
+          <label class="field-label">Format</label>
+          <div class="segmented" role="tablist" id="formatTabs">
+            <button type="button" class="segmented__btn is-active" data-format="pfp" role="tab" aria-selected="true">PFP Frame</button>
+            <button type="button" class="segmented__btn" data-format="id" role="tab" aria-selected="false">Builder ID</button>
+            <button type="button" class="segmented__btn" data-format="team" role="tab" aria-selected="false">Team Frame</button>
+          </div>
+        </div>
+
+        <!-- team size, only visible for team format -->
+        <div class="field-group" id="teamSizeGroup" hidden>
+          <label class="field-label">Crew size</label>
+          <div class="segmented segmented--sm" id="teamSizeTabs">
+            <button type="button" class="segmented__btn is-active" data-size="1">Solo</button>
+            <button type="button" class="segmented__btn" data-size="2">Duo</button>
+            <button type="button" class="segmented__btn" data-size="3">Trio</button>
+          </div>
+        </div>
+
+        <!-- photo uploader (builder #1) -->
+        <div class="field-group">
+          <label class="field-label">Photo <span class="req">*</span></label>
+          <div class="uploader" id="uploader-0" data-slot="0">
+            <input type="file" accept="image/png,image/jpeg,image/webp,image/heic,image/heif" id="fileInput-0" class="uploader__input" hidden />
+            <div class="uploader__drop" id="drop-0">
+              <div class="uploader__empty">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 16V4M12 4L7 9M12 4l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <p>Drop a photo, or</p>
+                <div class="uploader__btns">
+                  <button type="button" class="btn btn--tiny" data-action="choose">Choose file</button>
+                  <button type="button" class="btn btn--tiny btn--tiny-ghost" data-action="selfie">📸 Selfie</button>
+                </div>
+                <p class="hint">JPG, PNG, WebP, HEIC. Nothing leaves this device.</p>
+              </div>
+              <img class="uploader__preview" hidden alt="" />
+            </div>
+            <div class="pan-controls" hidden>
+              <label class="mono small">Zoom</label>
+              <input type="range" min="100" max="250" value="100" class="zoom-range" data-slot="0" />
+              <button type="button" class="btn btn--tiny btn--tiny-ghost" data-action="remove">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- extra teammate photo uploaders, injected by JS -->
+        <div id="teamUploaders"></div>
+
+        <!-- identity fields -->
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label" for="name">Full name <span class="req">*</span></label>
+            <input class="text-input" id="name" name="name" type="text" placeholder="Prayasu Satapathy" autocomplete="name" maxlength="50" />
+            <p class="field-msg" id="msg-name" role="alert"></p>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="xhandle">X handle</label>
+            <input class="text-input" id="xhandle" name="xhandle" type="text" placeholder="@yourhandle" maxlength="16" />
+            <p class="field-msg" id="msg-xhandle" role="alert"></p>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label" for="email">Email <span class="req">*</span></label>
+            <input class="text-input" id="email" name="email" type="email" placeholder="you@domain.com" autocomplete="email" inputmode="email" />
+            <p class="field-msg" id="msg-email" role="alert"></p>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="phone">Phone <span class="req">*</span></label>
+            <input class="text-input" id="phone" name="phone" type="tel" placeholder="98765 43210" autocomplete="tel" inputmode="tel" maxlength="18" />
+            <p class="field-msg" id="msg-phone" role="alert"></p>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label" for="stack">Primary stack / role <span class="req">*</span></label>
+            <input class="text-input" id="stack" name="stack" type="text" placeholder="React, Node, a little bit of everything" maxlength="60" />
+            <p class="field-msg" id="msg-stack" role="alert"></p>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="builderClass">Builder class</label>
+            <input class="text-input" id="builderClass" name="builderClass" type="text" placeholder="Auto-suggested from your stack" maxlength="40" />
+            <p class="hint">Guessed from your stack. Overwrite it if you'd rather choose your own.</p>
+          </div>
+        </div>
+
+        <!-- extra teammate identity fields injected here for duo/trio -->
+        <div id="teamFields"></div>
+
+        <!-- style -->
+        <div class="field-group">
+          <label class="field-label">Photo treatment</label>
+          <div class="segmented" id="filterTabs">
+            <button type="button" class="segmented__btn is-active" data-filter="natural">Natural</button>
+            <button type="button" class="segmented__btn" data-filter="cel">Cel</button>
+            <button type="button" class="segmented__btn" data-filter="riso">Riso</button>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Theme</label>
+          <div class="segmented" id="themeTabs">
+            <button type="button" class="segmented__btn is-active" data-theme="goa">Goa</button>
+            <button type="button" class="segmented__btn" data-theme="night">Night</button>
+            <button type="button" class="segmented__btn" data-theme="sand">Sand</button>
+          </div>
+        </div>
+
+        <p class="form-status" id="formStatus"></p>
+      </form>
+
+      <!-- ---- RIGHT: PREVIEW ---- -->
+      <div class="panel preview" id="previewPanel">
+        <div class="preview__canvas-wrap">
+          <canvas id="cardCanvas" width="1080" height="1350"></canvas>
+        </div>
+        <div class="preview__actions">
+          <button class="btn btn--primary btn--block" id="downloadBtn" type="button">Save .PNG ↓</button>
+          <button class="btn btn--outline btn--block" id="shareBtn" type="button">Post to X →</button>
+        </div>
+        <p class="preview__hint" id="previewHint">Fill in the required fields to unlock your ID.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ AGENDA ============ -->
+  <section class="agenda" id="agenda">
+    <div class="section-head">
+      <p class="eyebrow">Inside the room</p>
+      <h2>Four days, each with one job.</h2>
+    </div>
+    
+    <div class="agenda__desk-layout">
+      <!-- Left cards -->
+      <div class="agenda__cards-col agenda__cards-col--left">
+        <div class="agenda__card agenda__card--day1">
+          <span class="mono">DAY 01 - GENESIS DAY</span>
+          <h3>WHERE IT ALL BEGINS</h3>
+        </div>
+        <div class="agenda__card agenda__card--day2">
+          <span class="mono">DAY 02 - DAY OF TRIANGLE</span>
+          <h3>PROBLEM. SOLUTION. MARKET</h3>
+        </div>
+      </div>
+
+      <!-- Center illustration -->
+      <div class="agenda__workspace">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" class="agenda__workspace-svg">
+          <!-- Background palm trees and sky -->
+          <rect width="500" height="400" fill="#0B6E45"/>
+          <!-- Simplified Palm trees in background -->
+          <path d="M 60 400 Q 80 200 40 100 L 50 100 Q 90 200 70 400 Z" fill="#074524"/>
+          <path d="M 440 400 Q 420 200 460 100 L 450 100 Q 410 200 430 400 Z" fill="#074524"/>
+          <circle cx="50" cy="100" r="25" fill="#00A859" opacity="0.8"/>
+          <circle cx="450" cy="100" r="25" fill="#00A859" opacity="0.8"/>
+
+          <!-- House in the background -->
+          <g transform="translate(160, 120)">
+            <!-- Base walls -->
+            <rect x="20" y="40" width="140" height="90" fill="#ffffff" stroke="#000000" stroke-width="4.5"/>
+            <!-- Roof -->
+            <polygon points="10,40 90,-10 170,40" fill="#cc6633" stroke="#000000" stroke-width="4.5"/>
+            <line x1="10" y1="40" x2="170" y2="40" stroke="#000000" stroke-width="4"/>
+            <!-- Roof tiles pattern (horizontal lines) -->
+            <line x1="30" y1="27" x2="150" y2="27" stroke="#000000" stroke-width="2"/>
+            <line x1="50" y1="15" x2="130" y2="15" stroke="#000000" stroke-width="2"/>
+            <!-- Windows (pink/green shutters) -->
+            <rect x="35" y="65" width="25" height="30" fill="#FF007F" stroke="#000000" stroke-width="3"/>
+            <rect x="42" y="65" width="11" height="30" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+            
+            <rect x="120" y="65" width="25" height="30" fill="#0B6E45" stroke="#000000" stroke-width="3"/>
+            <rect x="120" y="65" width="12" height="30" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+            <!-- Door -->
+            <rect x="75" y="70" width="30" height="60" fill="#cc6633" stroke="#000000" stroke-width="3"/>
+            <!-- Door panels -->
+            <line x1="90" y1="70" x2="90" y2="130" stroke="#000000" stroke-width="2"/>
+          </g>
+
+          <!-- Table (bottom wooden area) -->
+          <rect x="0" y="310" width="500" height="90" fill="#cc9966" stroke="#000000" stroke-width="4.5"/>
+          <!-- Table planks lines -->
+          <line x1="0" y1="340" x2="500" y2="340" stroke="#885533" stroke-width="2.5"/>
+          <line x1="0" y1="370" x2="500" y2="370" stroke="#885533" stroke-width="2.5"/>
+
+          <!-- Laptop in the foreground -->
+          <g transform="translate(145, 230)">
+            <!-- Laptop screen -->
+            <rect x="10" y="0" width="190" height="110" fill="#000000" stroke="#000000" stroke-width="4.5" rx="6"/>
+            <!-- Screen content (HACKER HOUSE logo) -->
+            <rect x="16" y="6" width="178" height="98" fill="#0B6E45"/>
+            <text x="105" y="50" fill="#FFDC00" font-family="Fraunces, serif" font-weight="900" font-size="15" text-anchor="middle">HACKER</text>
+            <!-- Goa sticker on laptop screen -->
+            <g transform="translate(105, 68) scale(0.6)">
+              <rect x="-35" y="-12" width="70" height="24" rx="12" fill="#FF007F" stroke="#FF007F" stroke-width="2"/>
+              <text x="0" y="6" fill="#FFDC00" font-family="'Noto Sans Devanagari', sans-serif" font-weight="700" font-size="14" text-anchor="middle" text-baseline="middle">गोवा</text>
+            </g>
+            <text x="105" y="94" fill="#FFDC00" font-family="Fraunces, serif" font-weight="900" font-size="15" text-anchor="middle">HOUSE</text>
+            
+            <!-- Laptop Base -->
+            <polygon points="-5,110 205,110 215,124 -15,124" fill="#d0d0d0" stroke="#000000" stroke-width="4.5" stroke-linejoin="round"/>
+            <line x1="15" y1="117" x2="175" y2="117" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+          </g>
+
+          <!-- Typing Hands -->
+          <g transform="translate(160, 345)" stroke="#000000" stroke-width="3" fill="#ffcca3" stroke-linejoin="round">
+            <!-- Left hand -->
+            <path d="M -15,50 Q -5,15 15,5 Q 25,18 20,28 L 22,25 C 28,15 32,25 25,32 L 23,30 C 27,25 32,32 23,38 L 15,40 L 5,50 Z"/>
+            <!-- Right hand -->
+            <path d="M 180,50 Q 170,15 150,5 Q 140,18 145,28 L 143,25 C 137,15 133,25 140,32 L 142,30 C 138,25 133,32 142,38 L 150,40 L 160,50 Z" transform="scale(-1, 1) translate(-330, 0)"/>
+          </g>
+
+          <!-- Mug (yellow, on the right of laptop) -->
+          <g transform="translate(370, 312)">
+            <rect x="0" y="5" width="32" height="38" fill="#FFDC00" stroke="#000000" stroke-width="4" rx="4"/>
+            <!-- Handle -->
+            <path d="M 32,12 C 40,12 40,30 32,30" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+            <!-- Coffee/Mug opening -->
+            <ellipse cx="16" cy="5" rx="16" ry="4" fill="#58331b" stroke="#000000" stroke-width="3"/>
+          </g>
+
+          <!-- Bottle (beer/soda, on the right of mug) -->
+          <g transform="translate(420, 272)">
+            <!-- Neck -->
+            <rect x="10" y="0" width="10" height="25" fill="#e8a33d" stroke="#000000" stroke-width="3.5" rx="1"/>
+            <rect x="8" y="0" width="14" height="4" fill="#FF007F" stroke="#000000" stroke-width="2"/>
+            <!-- Body -->
+            <path d="M 10,25 C 0,35 0,55 0,78 L 30,78 C 30,55 30,35 20,25 Z" fill="#e8a33d" stroke="#000000" stroke-width="3.5" stroke-linejoin="round"/>
+            <!-- Label -->
+            <rect x="4" y="45" width="22" height="22" fill="#FF007F" stroke="#000000" stroke-width="2"/>
+            <circle cx="15" cy="56" r="6" fill="#FFDC00"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Right cards -->
+      <div class="agenda__cards-col agenda__cards-col--right">
+        <div class="agenda__card agenda__card--day3">
+          <span class="mono">DAY 03 - BUILD DAY</span>
+          <h3>HEADS DOWN. SHIP OR SHIP</h3>
+        </div>
+        <div class="agenda__card agenda__card--day4">
+          <span class="mono">DAY 04 - LAUNCH DAY</span>
+          <h3>THE WORLD WATCHES</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <p class="eyebrow">Before you ask</p>
+      <h2>Questions worth answering upfront.</h2>
+    </div>
+    <div class="faq__list">
+      <details open>
+        <summary>Is my photo, email or phone number uploaded anywhere?</summary>
+        <p>No. The card is drawn on your device with the Canvas API. Your details never leave the browser tab unless you press Save or Post — and even then, only the finished image goes to your gallery or to X's own composer.</p>
+      </details>
+      <details>
+        <summary>Why do you ask for email and phone if nothing is uploaded?</summary>
+        <p>They print on the Builder ID as your on-record contact, the way a real event pass would. We validate the format so your card never ships with a broken email or a phone number missing a digit — that's the only reason for the check.</p>
+      </details>
+      <details>
+        <summary>Does this ID get me a seat at Hacker House Goa?</summary>
+        <p>No — and it doesn't pretend to. Seats are decided through the official shortlisting process on Devfolio. This tool is for the #FrameInGoa task itself.</p>
+      </details>
+      <details>
+        <summary>Can I put my whole team on one card?</summary>
+        <p>Yes. Switch the format to Team Frame and choose Duo or Trio — each teammate gets their own photo, name and stack.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ SELFIE MODAL ============ -->
+<div class="modal" id="selfieModal" hidden>
+  <div class="modal__panel">
+    <div class="modal__head">
+      <span class="mono">CAMERA</span>
+      <button type="button" class="modal__close" id="closeSelfie" aria-label="Close">✕</button>
+    </div>
+    <video id="selfieVideo" autoplay playsinline muted></video>
+    <canvas id="selfieCanvas" hidden></canvas>
+    <p class="modal__error" id="selfieError" hidden></p>
+    <div class="modal__actions">
+      <button type="button" class="btn btn--primary btn--block" id="captureSelfie">Capture</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast" hidden></div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__palm footer__palm--left" aria-hidden="true"></div>
+  <div class="footer__palm footer__palm--right" aria-hidden="true"></div>
+
+  <div class="footer__content">
+    <!-- Left Column: Socials -->
+    <div class="footer__col footer__col--socials">
+      <a href="https://x.com/247pmstudio" target="_blank" rel="noopener" class="footer__link-item">
+        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" stroke-linecap="round"/></svg>
+        <span>@247PMSTUDIO</span>
+      </a>
+      <a href="https://t.me/twofourtysevenpm" target="_blank" rel="noopener" class="footer__link-item">
+        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 3L2 11.5L9.5 14.5L18 7L10.5 16L16.5 21.5L21 3Z" stroke-linejoin="round"/></svg>
+        <span>@TWOFOURTYSEVENPM</span>
+      </a>
+      <a href="mailto:satapathyprayasu@gmail.com" class="footer__link-item">
+        <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 6l9 6 9-6"/></svg>
+        <span>SATAPATHYPRAYASU@GMAIL.COM</span>
+      </a>
+    </div>
+
+    <!-- Center Column: Brand Logo Banner -->
+    <div class="footer__col footer__col--brand">
+      <div class="footer__brand-logo">
+        HACKER <span class="goa-sticker-wrap"><span class="goa-sticker">गोवा</span></span> HOUSE
+      </div>
+      <p class="footer__brand-sub">GOA, INDIA &middot; 28 &ndash; 31 OCT 2026</p>
+      <p class="footer__brand-sub footer__brand-sub--small">2:47 PM STUDIO</p>
+    </div>
+
+    <!-- Right Column: Legal links -->
+    <div class="footer__col footer__col--legal">
+      <a href="#" class="footer__legal-link">BRAND KIT</a>
+      <a href="#" class="footer__legal-link">TERM & CONDITIONS</a>
+      <p class="footer__copyright">&copy; 2026 HH-GOA. ALL RIGHTS RESERVED.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js?v=247"></script>
+</body>
+</html>
