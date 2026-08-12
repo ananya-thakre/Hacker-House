@@ -10,124 +10,45 @@
 <!-- Fonts: Fraunces (display/serif — the warm, human side), Space Grotesk + JetBrains Mono (the terminal/hacker side), Noto Sans Devanagari (गोवा) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Devanagari:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+Devanagari:wght@600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/styles.css?v=247" />
 </head>
 <body>
 
-<!-- Ambient background mesh blobs -->
-<div class="blob blob-1" aria-hidden="true"></div>
-<div class="blob blob-2" aria-hidden="true"></div>
+<!-- Ambient background mesh blobs removed for solid green background -->
 
 <!-- ============ NAV ============ -->
-<header class="nav">
-  <div class="nav__inner">
+<header class="nav" style="background: transparent; border: none; backdrop-filter: none; padding-top: 10px;">
+  <div class="nav__inner" style="max-width: 1400px;">
     <a class="nav__brand" href="#top">
-      <div class="brand-logo-stacked">
-        <span class="brand-top">2:47PM</span>
-        <span class="brand-bottom">STUDIO</span>
+      <div class="brand-logo-stacked" style="color: var(--brass);">
+        <span class="brand-top" style="font-size: 1.8rem; font-family: 'Rubik Dirt', var(--font-display); line-height: 0.8; letter-spacing: -0.05em;">2:47PM</span>
+        <span class="brand-bottom" style="font-size: 1rem; font-family: 'Rubik Dirt', var(--font-display); letter-spacing: -0.02em; padding-left: 2px;">STUDIO</span>
       </div>
     </a>
-    <a class="nav__apply" href="#studio">CREATE ID</a>
+    <div style="display: flex; align-items: center; gap: 30px;">
+      <a href="#" style="font-family: var(--font-mono); color: var(--ink); text-transform: uppercase; font-size: 0.95rem; text-decoration: none; letter-spacing: 0.05em; font-weight: 500;">CHECK HYPE</a>
+      <a class="nav__apply" href="#studio" style="padding: 12px 40px; font-size: 1.1rem; color: #0b1f1c;">APPLY</a>
+    </div>
   </div>
 </header>
 
 <main id="top">
 
   <!-- ============ HERO ============ -->
-  <section class="hero" id="hero">
-    <div class="hero__boot" aria-hidden="true">
-      <span id="bootLine">&gt;&gt; connecting to HACKER_HOUSE_GOA_2026 …</span><span class="cursor">_</span>
-    </div>
-
-    <div class="hero__grid">
-      <div class="hero__copy">
-        <p class="eyebrow">GOA, INDIA · 28–31 OCT 2026 · 247 SEATS</p>
-        <div class="hero__brand-banner">
-          <h1 class="hero__title hero__title-official">
-            HACKER <span class="goa-sticker-wrap"><span class="goa-sticker">गोवा</span></span> HOUSE
-          </h1>
-          <p class="hero__brand-sub">
-            <span>GOA, INDIA &middot; 28 &ndash; 31 OCT 2026</span>
-            <span>2:47 PM STUDIO</span>
-          </p>
-        </div>
-        <p class="hero__sub">
-          Upload a photo or take a selfie and get a Builder ID, a profile frame, or a
-          team pass for your whole crew — with your name, stack and an auto‑assigned
-          builder class stamped on. Everything renders in your browser; nothing is
-          uploaded anywhere.
+  <section class="hero" id="hero" style="padding-top: 8vh; padding-bottom: 12vh; max-width: 1400px;">
+    <div class="hero__grid" style="display: block;">
+      <div class="hero__brand-banner" style="text-align: center;">
+        <h1 class="hero__title hero__title-official" style="font-size: clamp(4rem, 16vw, 14rem) !important; line-height: 0.9 !important; letter-spacing: -0.03em; margin-bottom: 30px; display: flex; align-items: center; justify-content: center; gap: 0;">
+          <span style="display: inline-block; transform: scaleY(1.6); transform-origin: bottom; text-shadow: 4px 4px 0 #074524;">HACKER</span>
+          <span class="goa-sticker-wrap" style="width: 0; margin: 0 0.5em 0 0.2em; z-index: 10;"><span class="goa-sticker" style="font-size: 0.24em; padding: 6px 30px; transform: translate(-50%, -40%) rotate(-8deg); box-shadow: 8px 8px 0px rgba(0,0,0,0.3);">गोवा</span></span>
+          <span style="display: inline-block; transform: scaleY(1.6); transform-origin: bottom; text-shadow: 4px 4px 0 #074524;">HOUSE</span>
+        </h1>
+        <p class="hero__brand-sub" style="font-size: clamp(0.85rem, 1.5vw, 1.2rem); margin-top: 15px; color: var(--brass); font-weight: 500;">
+          <span style="text-align: left;">GOA, INDIA &middot; 28 &ndash; 31 OCT 2026</span>
+          <span style="text-align: right;">2:47 PM STUDIO</span>
         </p>
-        <div class="hero__actions">
-          <a href="#studio" class="btn btn--primary">Start building <span aria-hidden="true">↓</span></a>
-          <a href="https://hacker-house-goa-2026.devfolio.co/" target="_blank" rel="noopener" class="btn btn--ghost">Apply on Devfolio</a>
-        </div>
-        <p class="hero__note">No login. No email stored anywhere but your own device. Just #FrameInGoa.</p>
-      </div>
-
-
-    </div>
-
-    <!-- ============ BEACH STATS ILLUSTRATION ============ -->
-    <div class="hero__beach-stats" aria-label="Hacker House Goa Beach and Stats Signpost">
-      <div class="beach-sun"></div>
-      <div class="beach-sea">
-        <div class="sea-wave"></div>
-      </div>
-      <div class="beach-sand">
-        <!-- Striped Beach Umbrella -->
-        <div class="beach-umbrella">
-          <div class="umbrella-canopy"></div>
-          <div class="umbrella-pole"></div>
-        </div>
-        
-        <!-- Lounger Chairs -->
-        <div class="beach-chair chair-1"></div>
-        <div class="beach-chair chair-2"></div>
-        
-        <!-- Central Stats Signpost -->
-        <div class="beach-signpost">
-          <div class="signpost-pole"></div>
-          <div class="signpost-arrow arrow-1 yellow-arrow">
-            <span class="val">6800+</span>
-            <span class="lbl">Registrations</span>
-          </div>
-          <div class="signpost-arrow arrow-2 pink-arrow">
-            <span class="val">390+</span>
-            <span class="lbl">Hackers</span>
-          </div>
-          <div class="signpost-arrow arrow-3 yellow-arrow">
-            <span class="val">100</span>
-            <span class="lbl">Projects</span>
-          </div>
-          <div class="signpost-arrow arrow-4 pink-arrow">
-            <span class="val">$50K</span>
-            <span class="lbl">Bounties</span>
-          </div>
-        </div>
-
-        <!-- Retro Scooter -->
-        <div class="beach-scooter">
-          <div class="scooter-body"></div>
-          <div class="scooter-seat"></div>
-          <div class="scooter-wheel wheel-1"></div>
-          <div class="scooter-wheel wheel-2"></div>
-        </div>
-
-        <!-- Decorative Palm Trees -->
-        <div class="beach-palm palm-left"></div>
-        <div class="beach-palm palm-right"></div>
-
-        <!-- Bottom ornamental divider -->
-        <div class="beach-stats__ornament"></div>
-      </div>
-    </div>
-
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>GOA, INDIA</span><span>·</span><span>28–31 OCT 2026</span><span>·</span><span>247 SEATS</span><span>·</span><span>#FrameInGoa</span><span>·</span><span>LESS NOISE. MORE SIGNAL.</span><span>·</span>
-        <span>GOA, INDIA</span><span>·</span><span>28–31 OCT 2026</span><span>·</span><span>247 SEATS</span><span>·</span><span>#FrameInGoa</span><span>·</span><span>LESS NOISE. MORE SIGNAL.</span><span>·</span>
       </div>
     </div>
   </section>
